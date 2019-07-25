@@ -19,7 +19,6 @@ brew install \
 brew cask install \
     alfred \
     aerial \
-    amphetimine \
     appcleaner \
     backblaze \
     bbedit \
