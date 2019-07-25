@@ -26,7 +26,7 @@ mas install \
     775737590 \
     409183694
 
-#    1278508951 #Trello
+#    1278508951 # Trello
 #    1333542190 # 1Password 7
 #    1378283354 # Whalebird
 #    639210716 # NeoOffice
