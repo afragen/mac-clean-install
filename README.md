@@ -7,7 +7,10 @@ Install Node Version Manager as Oh-My-ZSH! plugin.
 
 Load as many apps via `brew install` or `mas install` as I can.
 
+For VS Code, install Sync Settings extension and download settings.
+
 Install `composer` dependencies afterwards.
+
     composer global require hirak/prestissimo
     composer global require friendsofphp/php-cs-fixer
 
@@ -17,5 +20,3 @@ Need to complete Node Version Manager installation.
 Must be moved in .zshrc before oh-my-zsh.sh is sourced.
 `echo "plugins+=(zsh-nvm)\n" >> ~/.zshrc` # Or just add to plugins.
 `upgrade_oh_my_zsh`
-
-For VS Code, install Sync Settings extension and download settings.

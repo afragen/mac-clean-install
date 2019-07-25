@@ -37,10 +37,13 @@ brew cask install \
     carbon-copy-cloner \
     docker \
     duet \
+    encryptme \
     firefox \
     google-chrome \
     gitkraken \
+    handbrake \
     horos \
+    imazing \
     keybase \
     local-by-flywheel \
 #    local-lightning \
@@ -51,7 +54,11 @@ brew cask install \
     spamsieve \
     transmit \
     visual-studio-code \
+    vlc \
+    wordpresscom \
     zoomus
+
+brew cask install https://www.corecode.io/macupdater/casks/citrix-workspace.rb
 
 mas install \
     1278508951 \ #Trello (2.10.14)
