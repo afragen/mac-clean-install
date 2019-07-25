@@ -1,4 +1,5 @@
 #!/bin/sh
+
 # Let's get started.
 xcode-select --install
 git config --global credential.helper osxkeychain
@@ -11,6 +12,7 @@ chsh -s $(which zsh)
 
 # Install Node Version Manager (nvm)
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
+echo "plugins+=(zsh-nvm)\n" >> ~/.zshrc
 
 # Install Homebrew and all apps on Homebrew.
 # Run install-brew.sh
