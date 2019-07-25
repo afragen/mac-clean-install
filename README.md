@@ -7,6 +7,9 @@ Install Node Version Manager as Oh-My-ZSH! plugin.
 
 Load as many apps via `brew install` or `mas install` as I can.
 
+## Execute the folllowing in your shell.
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install.sh)"`
+
 For VS Code, install Sync Settings extension and download settings.
 
 Install `composer` dependencies afterwards.
