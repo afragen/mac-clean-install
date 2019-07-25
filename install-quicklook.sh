@@ -12,6 +12,8 @@ brew cask install \
     qlimagesize \
     suspicious-package
 
+qlmanage -r
+
 #    qlcolorcode # Preview source code files with syntax highlighting
 #    qlstephen # Preview plain text files without a file extension. Example: README, CHANGELOG, etc.
 #    qlmarkdown # Preview Markdown files

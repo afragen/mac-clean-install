@@ -12,3 +12,5 @@ cask "betterzip"
 cask "qlimagesize"
 cask "suspicious-package"
 EOS
+
+qlmanage -r
