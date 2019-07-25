@@ -21,3 +21,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/
 # Install apps from Mac App Store.
 # Run install-mas.sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install-mas.sh)"
+
+# Install VSCode Settings Sync extension
+code --install-extension Shan.code-settings-sync
