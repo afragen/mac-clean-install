@@ -28,5 +28,5 @@ Must be moved in .zshrc before oh-my-zsh.sh is sourced.
 `echo "plugins+=(zsh-nvm)\n" >> ~/.zshrc` # Or just add to plugins.
 `upgrade_oh_my_zsh`
 
-To re-install brew/casks from Homebrew run the following command
+To re-install brew/casks from Homebrew run the following command.
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/reinstall-brew.sh)"`
