@@ -12,7 +12,16 @@ chsh -s $(which zsh)
 
 # Install Node Version Manager (nvm)
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
-echo "plugins+=(zsh-nvm)\n" >> ~/.zshrc
+
+# Install my modified robbyrussell.zsh-theme.
+curl -o ~/.oh-my-zsh/themes/robbyrussell-mod.zsh-theme https://gist.githubusercontent.com/afragen/b5c7360618558ed305fef00b01db9116/raw/3ce7b4eab96a01bf7b46e7e3c17d7dc181cd51fe/robbyrussell-mod.zsh-theme
+
+# Finish setting up oh-my-zsh!
+sed -i '.bak' 's/^ZSH_THEME=.*$/ZSH_THEME="robbyrussell-mod"/' ~/.zshrc
+sed -i '.bak' '/^source/ i\
+plugins\+=\(zsh-nvm\)
+' ~/.zshrc
+upgrade_oh_my_zsh
 
 # Install Homebrew and all apps on Homebrew.
 # Run install-brew.sh
