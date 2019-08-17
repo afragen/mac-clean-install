@@ -14,7 +14,10 @@ chsh -s $(which zsh)
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
 
 # Install my modified robbyrussell.zsh-theme.
-curl -o ~/.oh-my-zsh/themes/robbyrussell-mod.zsh-theme https://gist.githubusercontent.com/afragen/b5c7360618558ed305fef00b01db9116/raw/3ce7b4eab96a01bf7b46e7e3c17d7dc181cd51fe/robbyrussell-mod.zsh-theme
+curl -o ~/.oh-my-zsh/themes/robbyrussell-mod.zsh-theme https://gist.githubusercontent.com/afragen/b5c7360618558ed305fef00b01db9116/raw/robbyrussell-mod.zsh-theme
+
+# Install my zsh aliases
+curl -o ~/.oh-my-zsh/custom/aliases.zsh https://gist.githubusercontent.com/afragen/7fc208a836db4b669927a0fae8fc4089/raw/aliases.zsh
 
 # Finish setting up oh-my-zsh!
 sed -i '.bak' 's/^ZSH_THEME=.*$/ZSH_THEME="robbyrussell-mod"/' ~/.zshrc
