@@ -25,3 +25,6 @@ Install `composer` dependencies afterwards.
 
 To re-install brew/casks from Homebrew run the following command.
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/reinstall-brew.sh)"`
+
+To update brew casks from Homebrew run the following command.
+`sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/upgrade-brew.sh)"`
