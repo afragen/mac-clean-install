@@ -21,6 +21,7 @@ brew cask install \
     aerial \
     appcleaner \
     backblaze \
+    bartender \
     bbedit \
     carbon-copy-cloner \
     docker \
@@ -34,7 +35,7 @@ brew cask install \
     imazing \
     keybase \
     local-by-flywheel \
-#    local-lightning \
+    maccy \
     plex-media-server \
     screens \
     homebrew/cask-versions/sequel-pro-nightly \
@@ -45,6 +46,7 @@ brew cask install \
     vlc \
     wordpresscom \
     zoomus
+#    local-lightning \
 
 brew cask install https://www.corecode.io/macupdater/casks/citrix-workspace.rb
 
