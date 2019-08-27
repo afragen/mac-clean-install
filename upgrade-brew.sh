@@ -20,6 +20,7 @@ brew cask upgrade \
     imazing \
     keybase \
     local-by-flywheel \
+    netnewswire \
     maccy \
     plex-media-server \
     screens \

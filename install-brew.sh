@@ -36,6 +36,7 @@ brew cask install \
     keybase \
     local-by-flywheel \
     maccy \
+    netnewswire \
     plex-media-server \
     screens \
     homebrew/cask-versions/sequel-pro-nightly \
