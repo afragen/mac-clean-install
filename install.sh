@@ -36,3 +36,6 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/
 
 # Install VSCode Settings Sync extension
 code --install-extension Shan.code-settings-sync
+
+# Add xDebug idekey for VSCode to shell.
+echo "export XDEBUG_CONFIG=\"idekey=VSCODE\"" >> ~/.zshrc
