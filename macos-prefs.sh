@@ -3,6 +3,8 @@
 # ~/.macos — https://mths.be/
 # https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 
+echo "Begin setting MacOS System Prefs...\n"
+
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
@@ -196,8 +198,8 @@ sudo pmset -c sleep 0
 # Set machine sleep to 5 minutes on battery
 sudo pmset -b sleep 5
 
-# Set standby delay to 4 hours (default is 1 hour)
-sudo pmset -a standbydelay 14400
+# Set standby delay to 24 hours (default is 1 hour)
+sudo pmset -a standbydelay 86400
 
 # Never go into computer sleep mode
 #sudo systemsetup -setcomputersleep Off > /dev/null
@@ -853,6 +855,8 @@ defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
 ###############################################################################
 # Kill affected applications                                                  #
 ###############################################################################
+echo "Kill affected applicatons...\n"
+sleep 1
 
 for app in "Activity Monitor" \
     "Address Book" \
@@ -877,3 +881,4 @@ for app in "Activity Monitor" \
     killall "${app}" &>/dev/null
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+sleep 3
