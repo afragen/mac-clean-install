@@ -3,14 +3,14 @@
 # ~/.macos — https://mths.be/
 # https://github.com/mathiasbynens/dotfiles/blob/master/.macos
 
-echo "Begin setting MacOS System Prefs...\n"
-
 # Close any open System Preferences panes, to prevent them from overriding
 # settings we’re about to change
 osascript -e 'tell application "System Preferences" to quit'
 
 # Ask for the administrator password upfront
 sudo -v
+
+echo "Begin setting MacOS System Prefs...\n"
 
 # Keep-alive: update existing `sudo` time stamp until `.macos` has finished
 while true; do
