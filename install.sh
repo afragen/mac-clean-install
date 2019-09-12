@@ -6,6 +6,10 @@ git config --global credential.helper osxkeychain
 git config --global user.email "andy@thefragens.com"
 git config --global user.name "Andy Fragen"
 
+# Install/Update System Prefs
+# Run macos-prefs.sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/macos-prefs.sh)"
+
 # Install Oh My ZSH!
 sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 chsh -s $(which zsh)
@@ -38,4 +42,4 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/
 code --install-extension Shan.code-settings-sync
 
 # Add xDebug idekey for VSCode to shell.
-echo "export XDEBUG_CONFIG=\"idekey=VSCODE\"" >> ~/.zshrc
+echo "export XDEBUG_CONFIG=\"idekey=VSCODE\"" >>~/.zshrc
