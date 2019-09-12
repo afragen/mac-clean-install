@@ -1,6 +1,6 @@
 # Mac Clean Install
 
-I'm hoping to make my setup of a clean MacBook as simple as possible. So far this is minimally tested.
+I'm hoping to make my setup of a clean MacBook as simple as possible. So far this is minimally tested. Must restart computer afterwards.
 
 Install Homebrew and Oh-My-ZSH!
 
