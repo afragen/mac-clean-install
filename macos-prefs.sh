@@ -828,33 +828,10 @@ defaults write com.twitter.twitter-mac HideInBackground -bool true
 defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
 
 ###############################################################################
-# Kill affected applications                                                  #
+# Restart MacOS                                                               #
 ###############################################################################
-echo "Kill affected applicatons...\n"
-sleep 3
-
-for app in "Activity Monitor" \
-    "Address Book" \
-    "Calendar" \
-    "cfprefsd" \
-    "Contacts" \
-    "Dock" \
-    "Finder" \
-    "Google Chrome Canary" \
-    "Google Chrome" \
-    "Mail" \
-    "Messages" \
-    "Opera" \
-    "Photos" \
-    "Safari" \
-    "SystemUIServer" \
-    "Transmission" \
-    "Tweetbot" \
-    "Twitter" \
-    "iCal"; do
-    killall "${app}" &>/dev/null
-done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
+sleep 1
 echo "Restarting..."
 sleep 3
 sudo shutdown -r now
