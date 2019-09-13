@@ -146,7 +146,7 @@ defaults write NSGlobalDomain AppleKeyboardUIMode -int 3
 #defaults write NSGlobalDomain ApplePressAndHoldEnabled -bool false
 
 # Set a blazingly fast keyboard repeat rate
-defaults write NSGlobalDomain KeyRepeat -int 2
+defaults write NSGlobalDomain KeyRepeat -int 3
 defaults write NSGlobalDomain InitialKeyRepeat -int 10
 
 # Set language and text formats
@@ -388,7 +388,7 @@ defaults write com.apple.dock expose-animation-duration -float 0.1
 defaults write com.apple.dock expose-group-by-app -bool false
 
 # Disable Dashboard
-#defaults write com.apple.dashboard mcx-disabled -bool true
+defaults write com.apple.dashboard mcx-disabled -bool true
 
 # Don’t show Dashboard as a Space
 defaults write com.apple.dock dashboard-in-overlay -bool true
@@ -411,7 +411,7 @@ defaults write com.apple.dock showhidden -bool true
 #defaults write com.apple.dock show-recents -bool false
 
 # Disable the Launchpad gesture (pinch with thumb and three fingers)
-#defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
+defaults write com.apple.dock showLaunchpadGestureEnabled -int 0
 
 # Reset Launchpad, but keep the desktop wallpaper intact
 find "${HOME}/Library/Application Support/Dock" -name "*-*.db" -maxdepth 1 -delete
