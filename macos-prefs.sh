@@ -848,7 +848,7 @@ for app in "Activity Monitor" \
     "Photos" \
     "Safari" \
     "SystemUIServer" \
-    "Terminal" \
+#    "Terminal" \
     "Transmission" \
     "Tweetbot" \
     "Twitter" \
@@ -857,3 +857,5 @@ for app in "Activity Monitor" \
 done
 echo "Done. Note that some of these changes require a logout/restart to take effect."
 sleep 3
+killall "Terminal" &>/dev/null
+sudo shutdown -r now
