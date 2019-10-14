@@ -3,14 +3,13 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 brew update
 brew upgrade
-brew tap caskroom/cask
-brew tap "homebrew/cask-fonts"
 brew cleanup
 brew doctor
 
 #brew bundle handles errors for already installed casks/brews/etc/
 brew bundle --file=- <<-EOS
 cask_args appdir: "/Applications"
+tap "homebrew/cask-fonts"
 
 brew "cask"
 brew "composer"
