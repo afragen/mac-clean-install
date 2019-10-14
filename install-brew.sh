@@ -4,51 +4,56 @@
 brew update
 brew upgrade
 brew tap caskroom/cask
+brew tap "homebrew/cask-fonts"
 brew cleanup
 brew doctor
 
-brew install \
-    composer \
-    mas \
-    php@7.2 \
-    phpunit \
-    php-cs-fixer \
-    php-code-sniffer \
-    wp-cli
+#brew bundle handles errors for already installed casks/brews/etc/
+brew bundle --file=- <<-EOS
+cask_args appdir: "/Applications"
 
-brew cask install \
-    alfred \
-    aerial \
-    appcleaner \
-    backblaze \
-    bartender \
-    bbedit \
-    carbon-copy-cloner \
-    docker \
-    duet \
-    encryptme \
-    firefox \
-    google-chrome \
-    gitkraken \
-    handbrake \
-    horos \
-    imazing \
-    keybase \
-    local-by-flywheel \
-    maccy \
-    netnewswire \
-    plex-media-server \
-    screens \
-    homebrew/cask-versions/sequel-pro-nightly \
-    slack \
-    spamsieve \
-    transmit \
-    visual-studio-code \
-    vlc \
-    wordpresscom \
-    zoomus
-#    local-lightning \
+brew "cask"
+brew "composer"
+brew "mas"
+brew "php@7.2"
+brew "phpunit"
+brew "php-cs-fixer"
+brew "php-code-sniffer"
+brew "wp-cli"
 
-brew cask install https://www.corecode.io/macupdater/casks/citrix-workspace.rb
+cask "alfred"
+cask "aerial"
+cask "appcleaner"
+cask "backblaze"
+cask "bartender"
+cask "bbedit"
+cask "carbon-copy-cloner"
+cask "docker"
+cask "duet"
+cask "encryptme"
+cask "firefox"
+cask "google-chrome"
+cask "gitkraken"
+cask "handbrake"
+cask "horos"
+cask "imazing"
+cask "keybase"
+cask "local-by-flywheel"
+cask "local-lightning"
+cask "netnewswire"
+cask "maccy"
+cask "plex-media-server"
+cask "screens"
+cask "homebrew/cask-versions/sequel-pro-nightly"
+cask "slack"
+cask "spamsieve"
+cask "transmit"
+cask "visual-studio-code"
+cask "vlc"
+cask "wordpresscom"
+cask "zoomus"
+
+cask "https://www.corecode.io/macupdater/casks/citrix-workspace.rb"
+EOS
 
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install-quicklook.sh)"
