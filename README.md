@@ -26,10 +26,3 @@ For VS Code
   1. Settings Sync extension installed from `install.sh`
   2. Open VS Code and setup with GitHub access.
   3. Download Settings Sync settings.
-
-
-To re-install brew/casks from Homebrew run the following command.
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/reinstall-brew.sh)"`
-
-To update brew casks from Homebrew run the following command.
-`sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/upgrade-brew.sh)"`
