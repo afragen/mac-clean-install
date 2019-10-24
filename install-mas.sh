@@ -26,5 +26,6 @@ mas "iMovie", id: 408981434
 mas "Numbers", id: 409203825
 mas "Keynote", id: 409183694
 mas "GarageBand", id: 682658836
+mas "xCode", id: 497799835
 
 EOS
