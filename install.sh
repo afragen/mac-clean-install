@@ -26,13 +26,15 @@ plugins\+=\(zsh-nvm\)
 ' ~/.zshrc
 upgrade_oh_my_zsh
 
+# Install Brewfile
+curl -o ~/Brewfile https://raw.githubusercontent.com/afragen/mac-clean-install/master/Brewfile
+
 # Install Homebrew and all apps on Homebrew.
 # Run install-brew.sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install-brew.sh)"
 
-# Install apps from Mac App Store.
-# Run install-mas.sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install-mas.sh)"
+# Restart QuickLook plugins
+qlmanage -r
 
 # Install VSCode Settings Sync extension
 code --install-extension Shan.code-settings-sync

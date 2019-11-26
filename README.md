@@ -6,10 +6,11 @@ I'm hoping to make my setup of a clean MacBook as simple as possible. Must resta
 * Execute the `install.sh` script.
   * Install Homebrew and Oh-My-ZSH!
   * Install Node Version Manager as Oh-My-ZSH! plugin.
-  * Load as many apps via `brew install` or `mas install` as I can.
+  * Install Brewfile.
+  * Load as many apps via `brew bundle install` as I can.
   * Update MacOS System Preferences.
   * Restart computer.
-* Install `composer` dependencies afterwards.
+ * Install `composer` dependencies afterwards.
 * Update VS Code settings.
 
 ```
