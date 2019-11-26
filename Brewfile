@@ -19,7 +19,6 @@ brew "node"
 brew "php", restart_service: true
 brew "php-code-sniffer", link: false
 brew "php-cs-fixer"
-brew "php@7.2", restart_service: true
 brew "phpunit", link: false
 brew "tree"
 brew "wget"
@@ -62,7 +61,6 @@ cask "slack"
 cask "spamsieve"
 cask "suspicious-package"
 cask "transmit"
-cask "virtualbox"
 cask "visual-studio-code"
 cask "vlc"
 cask "wordpresscom"
