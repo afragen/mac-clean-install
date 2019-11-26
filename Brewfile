@@ -69,7 +69,6 @@ cask "zoomus"
 mas "1Password 7", id: 1333542190
 mas "Amphetamine", id: 937984704
 mas "Apple Configurator 2", id: 1037126344
-mas "Banktivity", id: 675813946
 mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
 mas "Keynote", id: 409183694
