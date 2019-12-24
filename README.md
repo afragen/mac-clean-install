@@ -27,3 +27,6 @@ For VS Code
   1. Settings Sync extension installed from `install.sh`
   2. Open VS Code and setup with GitHub access.
   3. Download Settings Sync settings.
+
+## Import base `ruleset.xml` for PHPCS
+`curl --create-dirs -o ~/code-standards/ruleset.xml https://gist.githubusercontent.com/afragen/341bc1c7f7438cf963d4f6e08f403f40/raw/ruleset.xml`
