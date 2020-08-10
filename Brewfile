@@ -21,6 +21,7 @@ brew "php", restart_service: true
 brew "php-code-sniffer", link: false
 brew "php-cs-fixer"
 brew "phpunit", link: false
+brew "svn"
 brew "tree"
 brew "wget"
 brew "wp-cli"
