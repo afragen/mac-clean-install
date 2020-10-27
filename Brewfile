@@ -72,6 +72,7 @@ cask "visual-studio-code"
 cask "vlc"
 cask "wordpresscom"
 cask "zoomus"
+cask "https://www.corecode.io/macupdater/casks/citrix-workspace.rb"
 
 mas "1Password 7", id: 1333542190
 mas "Amphetamine", id: 937984704
