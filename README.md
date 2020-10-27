@@ -14,7 +14,6 @@ I'm hoping to make my setup of a clean MacBook as simple as possible. Must resta
 * Update VS Code settings.
 
 ```
-composer global require hirak/prestissimo
 composer global require friendsofphp/php-cs-fixer
 composer create-project wp-coding-standards/wpcs --no-dev
 ```
