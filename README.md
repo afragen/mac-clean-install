@@ -31,3 +31,16 @@ For VS Code
 
 ## Import base `ruleset.xml` for PHPCS
 `curl --create-dirs -o ~/code-standards/ruleset.xml https://gist.githubusercontent.com/afragen/341bc1c7f7438cf963d4f6e08f403f40/raw/ruleset.xml`
+
+## Set `sudo` to use touch ID
+https://sixcolors.com/post/2020/11/quick-tip-enable-touch-id-for-sudo/
+
+1. `cd /etc/pam.d`
+2. `sudo pico sudo`
+3. Add `auth sufficient pam_tid.do` as first line under headers
+
+## Set daily scripts - run in periodic daily
+* Script must be executable, `chmod +x <path to script>`
+* `mkdir -p /usr/local/etc/periodic/daily`
+* Symlink daily backup scripts to above folder
+  * `ln -s <path to script> /usr/local/etc/periodic/daily`
