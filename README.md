@@ -2,7 +2,9 @@
 
 I'm hoping to make my setup of a clean MacBook as simple as possible. Must restart computer afterwards.
 
-* Log into iTunes account from iTunes.
+* Log into Mac App Store account.
+* `xcode-select --install` to install XCode command line tools.
+
 * Execute the `install.sh`
   * Install Homebrew and Oh-My-ZSH!
   * Install Node Version Manager as Oh-My-ZSH! plugin.
