@@ -15,6 +15,7 @@ brew "gcc"
 brew "git"
 brew "libxml2"
 brew "mas"
+brew "mysql"
 brew "node"
 brew "php", restart_service: true
 brew "php-code-sniffer", link: false
