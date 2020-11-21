@@ -26,10 +26,11 @@ plugins\+=\(zsh-nvm\)
 ' ~/.zshrc
 upgrade_oh_my_zsh
 
-# Install periodic daily backup
-curl -o ~/Documents https://raw.githubusercontent.com/afragen/mac-clean-install/master/backup-periodic-daily.sh
-mkdir -p /usr/local/periodic/daily
-ln -s ~/Documents/backup-periodic-daily.sh /usr/local/periodic/daily
+# Install and activate periodic daily backup
+curl -o ~/Documents/backup-periodic-daily.sh https://raw.githubusercontent.com/afragen/mac-clean-install/master/backup-periodic-daily.sh
+chmod +x ~/Documents/backup-periodic-daily.sh
+sudo mkdir -p /usr/local/etc/periodic/daily
+ln -s ~/Documents/backup-periodic-daily.sh /usr/local/etc/periodic/daily
 
 # Install Brewfile
 curl -o ~/Brewfile https://raw.githubusercontent.com/afragen/mac-clean-install/master/Brewfile
