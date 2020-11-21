@@ -49,7 +49,7 @@ code --install-extension Shan.code-settings-sync
 echo "export XDEBUG_CONFIG=\"idekey=VSCODE\"" >>~/.zshrc
 
 # Add WPCS path to shell.
-echo "export PATH=/Users/afragen/wpcs/vendor/bin:$PATH" >>~/.zshrc
+echo "export PATH=$PATH:/Users/afragen/wpcs/vendor/bin" >>~/.zshrc
 
 # Install/Update System Prefs
 # Run macos-prefs.sh
