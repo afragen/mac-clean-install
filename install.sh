@@ -42,6 +42,9 @@ code --install-extension Shan.code-settings-sync
 # Add xDebug idekey for VSCode to shell.
 echo "export XDEBUG_CONFIG=\"idekey=VSCODE\"" >>~/.zshrc
 
+# Add WPCS path to shell.
+echo "export PATH=/Users/afragen/wpcs/vendor/bin:$PATH" >>~/.zshrc
+
 # Install/Update System Prefs
 # Run macos-prefs.sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/macos-prefs.sh)"
