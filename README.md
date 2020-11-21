@@ -15,11 +15,13 @@ I'm hoping to make my setup of a clean MacBook as simple as possible. Must resta
  * Install `composer` dependencies afterwards.
 * Update VS Code settings.
 
+## Setup WordPress Coding Standards
 ```
 composer global require friendsofphp/php-cs-fixer
 composer create-project wp-coding-standards/wpcs --no-dev
+export PATH=~/wpcs/vendor/bin:$PATH
+phpcs --config-set installed_paths ~/wpcs
 ```
-
 
 ## Execute the folllowing in your shell.
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install.sh)"`
