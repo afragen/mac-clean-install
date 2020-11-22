@@ -32,9 +32,6 @@ chmod +x ~/Documents/backup-periodic-daily.sh
 sudo mkdir -p /usr/local/etc/periodic/daily
 ln -s ~/Documents/backup-periodic-daily.sh /usr/local/etc/periodic/daily
 
-# Install Brewfile
-curl -o ~/Brewfile https://raw.githubusercontent.com/afragen/mac-clean-install/master/Brewfile
-
 # Install Homebrew and all apps on Homebrew.
 # Run install-brew.sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install-brew.sh)"
@@ -48,8 +45,14 @@ code --install-extension Shan.code-settings-sync
 # Add xDebug idekey for VSCode to shell.
 echo "export XDEBUG_CONFIG=\"idekey=VSCODE\"" >>~/.zshrc
 
-# Add WPCS path to shell.
+# Install WordPress Coding Standards.
+composer global require friendsofphp/php-cs-fixer
+composer create-project wp-coding-standards/wpcs --no-dev
 echo "export PATH=$PATH:/Users/afragen/wpcs/vendor/bin" >>~/.zshrc
+phpcs --config-set installed_paths ~/wpcs
+
+## Import base `ruleset.xml` for PHPCS
+curl --create-dirs -o ~/code-standards/ruleset.xml https://gist.githubusercontent.com/afragen/341bc1c7f7438cf963d4f6e08f403f40/raw/ruleset.xml
 
 # Install/Update System Prefs
 # Run macos-prefs.sh

@@ -7,21 +7,22 @@ I'm hoping to make my setup of a clean MacBook as simple as possible. Must resta
 
 * Execute the `install.sh`
   * Install Homebrew and Oh-My-ZSH!
+  * Setup WordPress Coding Standards
   * Install Node Version Manager as Oh-My-ZSH! plugin.
   * Install Brewfile.
   * Load as many apps via `brew bundle install` as I can.
   * Update MacOS System Preferences.
   * Restart computer.
- * Install `composer` dependencies afterwards.
 * Update VS Code settings.
 
-## Setup WordPress Coding Standards
+## Setup WordPress Coding Standards set in `install.sh`
 ```
 composer global require friendsofphp/php-cs-fixer
 composer create-project wp-coding-standards/wpcs --no-dev
-export PATH=~/wpcs/vendor/bin:$PATH
+echo "export PATH=$PATH:/Users/afragen/wpcs/vendor/bin" >>~/.zshrc
 phpcs --config-set installed_paths ~/wpcs
 ```
+
 
 ## Execute the folllowing in your shell.
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install.sh)"`
@@ -31,9 +32,6 @@ For VS Code
   2. Open VS Code and setup with GitHub access.
   3. Download Settings Sync settings.
 
-## Import base `ruleset.xml` for PHPCS
-`curl --create-dirs -o ~/code-standards/ruleset.xml https://gist.githubusercontent.com/afragen/341bc1c7f7438cf963d4f6e08f403f40/raw/ruleset.xml`
-
 ## Set `sudo` to use touch ID
 https://sixcolors.com/post/2020/11/quick-tip-enable-touch-id-for-sudo/
 
@@ -41,8 +39,8 @@ https://sixcolors.com/post/2020/11/quick-tip-enable-touch-id-for-sudo/
 2. `sudo pico sudo`
 3. Add `auth sufficient pam_tid.do` as first line under headers
 
-## Set daily scripts - run in periodic daily
+## Set daily scripts - run in periodic daily, set in `install.sh`
 * Script must be executable, `chmod +x <path to script>`
-* `mkdir -p /usr/local/etc/periodic/daily`
+* `sudo mkdir -p /usr/local/etc/periodic/daily`
 * Symlink daily backup scripts to above folder
   * `ln -s <path to script> /usr/local/etc/periodic/daily`
