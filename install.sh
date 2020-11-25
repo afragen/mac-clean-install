@@ -1,6 +1,7 @@
 #!/bin/sh
 
 # Let's get started.
+cd ~
 xcode-select --install
 git config --global credential.helper osxkeychain
 git config --global user.email "andy@thefragens.com"
