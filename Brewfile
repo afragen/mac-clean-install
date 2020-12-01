@@ -48,14 +48,6 @@ cask "maccy"
 cask "netnewswire"
 cask "openinterminal"
 cask "plex-media-server"
-cask "qlcolorcode"
-cask "qlimagesize"
-cask "qlmarkdown"
-cask "qlprettypatch"
-cask "qlstephen"
-cask "quickbooks-online"
-cask "quicklook-csv"
-cask "quicklook-json"
 cask "screens"
 cask "sequel-pro-nightly"
 cask "slack"
@@ -75,6 +67,7 @@ mas "Apple Configurator 2", id: 1037126344
 mas "GarageBand", id: 682658836
 mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
+mas "iPreview", id: 1519213509
 mas "Keynote", id: 409183694
 mas "MsgFiler", id: 418778021
 mas "NeoOffice", id: 639210716
@@ -83,6 +76,7 @@ mas "Pages", id: 409201541
 mas "Patterns", id: 429449079
 mas "PDFOptim", id: 621276561
 mas "Pixelmator Pro", id: 1289583905
+mas "PreviewMarkdown", id: 1492280469
 mas "RAW Power", id: 1157116444
 mas "SnapNDrag Pro", id: 430397512
 mas "Trello", id: 1278508951

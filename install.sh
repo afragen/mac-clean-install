@@ -37,9 +37,6 @@ ln -s ~/Documents/backup-periodic-daily.sh /usr/local/etc/periodic/daily
 # Run install-brew.sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install-brew.sh)"
 
-# Restart QuickLook plugins
-qlmanage -r
-
 # Install VSCode Settings Sync extension
 code --install-extension Shan.code-settings-sync
 
