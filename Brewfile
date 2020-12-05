@@ -58,7 +58,7 @@ cask "transmit"
 cask "visual-studio-code"
 cask "vlc"
 cask "wordpresscom"
-cask "zoomus"
+cask "zoom"
 cask "https://www.corecode.io/macupdater/casks/citrix-workspace.rb"
 
 mas "1Password 7", id: 1333542190
