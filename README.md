@@ -37,7 +37,7 @@ https://sixcolors.com/post/2020/11/quick-tip-enable-touch-id-for-sudo/
 
 1. `cd /etc/pam.d`
 2. `sudo pico sudo`
-3. Add `auth sufficient pam_tid.do` as first line under headers
+3. Add `auth sufficient pam_tid.so` as first line under headers
 
 ## Set daily scripts - run in periodic daily, set in `install.sh`
 * Script must be executable, `chmod +x <path to script>`
