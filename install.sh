@@ -35,13 +35,14 @@ ln -s ~/Documents/backup-periodic-daily.sh /usr/local/etc/periodic/daily
 
 # Install Homebrew and all apps on Homebrew.
 # Run install-brew.sh
+echo "export PATH=/opt/homebrew/bin:$PATH" >>~/.zshrc
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install-brew.sh)"
 
 # Install VSCode Settings Sync extension
 code --install-extension Shan.code-settings-sync
 
 # Add xDebug idekey for VSCode to shell.
-echo "export XDEBUG_CONFIG=\"idekey=VSCODE\"" >>~/.zshrc
+# echo "export XDEBUG_CONFIG=\"idekey=VSCODE\"" >>~/.zshrc
 
 # Install WordPress Coding Standards.
 composer global require friendsofphp/php-cs-fixer
