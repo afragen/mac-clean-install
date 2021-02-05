@@ -31,7 +31,7 @@ upgrade_oh_my_zsh
 curl -o ~/Documents/backup-periodic-daily.sh https://raw.githubusercontent.com/afragen/mac-clean-install/master/backup-periodic-daily.sh
 chmod +x ~/Documents/backup-periodic-daily.sh
 sudo mkdir -p /usr/local/etc/periodic/daily
-ln -s ~/Documents/backup-periodic-daily.sh /usr/local/etc/periodic/daily
+sudo ln -s ~/Documents/backup-periodic-daily.sh /usr/local/etc/periodic/daily
 
 # Install Homebrew and all apps on Homebrew.
 # Run install-brew.sh
