@@ -5,6 +5,8 @@ I'm hoping to make my setup of a clean MacBook as simple as possible. Must resta
 * Log into Mac App Store account.
 * `xcode-select --install` to install XCode command line tools.
 
+* # Add `/opt/homebrew/bin` and `/opt/homebrew/sbin` to `/etc/paths`
+
 * Execute the `install.sh`
   * Install Homebrew and Oh-My-ZSH!
   * Setup WordPress Coding Standards
