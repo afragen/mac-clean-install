@@ -36,6 +36,9 @@ sudo ln -s ~/Documents/backup-periodic-daily.sh /usr/local/etc/periodic/daily
 # Install Homebrew and all apps on Homebrew.
 # Run install-brew.sh
 # Add `/opt/homebrew/bin` and `/opt/homebrew/sbin` to `/etc/paths`
+echo -e "/opt/homebrew/bin\n/opt/homebrew/sbin\n$(cat /etc/paths)"
+# Remove duplicate lines
+awk '!seen[$0]++' /etc/paths
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install-brew.sh)"
 
 # Install VSCode Settings Sync extension
