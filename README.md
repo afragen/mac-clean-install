@@ -46,3 +46,10 @@ https://sixcolors.com/post/2020/11/quick-tip-enable-touch-id-for-sudo/
 * `sudo mkdir -p /usr/local/etc/periodic/daily`
 * Symlink daily backup scripts to above folder
   * `ln -s <path to script> /usr/local/etc/periodic/daily`
+
+## Setup node for arm64 (Apple Silicon)
+* open terminal session, oh-my-zsh should automatically install nvm
+* `nvm install 15` as of node v15.0 compiled for Apple Silicon.
+* allow time for node 15.x to build/compile
+* `nvm use 15` to set node for current session
+* `nvm alias default 15` to set default shell session version of node
