@@ -25,7 +25,7 @@ sed -i '.bak' 's/^ZSH_THEME=.*$/ZSH_THEME="afragen"/' ~/.zshrc
 sed -i '.bak' '/^source/ i\
 plugins\+=\(zsh-nvm\)
 ' ~/.zshrc
-upgrade_oh_my_zsh
+omz update
 
 # Install and activate periodic daily backup
 curl -o ~/Documents/backup-periodic-daily.sh https://raw.githubusercontent.com/afragen/mac-clean-install/master/backup-periodic-daily.sh
