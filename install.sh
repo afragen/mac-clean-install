@@ -60,3 +60,6 @@ curl --create-dirs -o ~/code-standards/ruleset.xml https://gist.githubuserconten
 # Install/Update System Prefs
 # Run macos-prefs.sh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/macos-prefs.sh)"
+
+# Prevent duplicate PATH variables.
+echo "typeset -U PATH" >>~/.zshrc
