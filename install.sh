@@ -50,7 +50,8 @@ code --install-extension Shan.code-settings-sync
 # Install WordPress Coding Standards.
 composer global require friendsofphp/php-cs-fixer
 composer create-project wp-coding-standards/wpcs --no-dev
-echo "export PATH=$PATH:/Users/afragen/wpcs/vendor/bin" >>~/.zshrc
+composer require --dev --working-dir=/Users/afragen/wpcs phpcompatibility/phpcompatibility-wp:"*"
+echo "export PATH=/Users/afragen/wpcs/vendor/bin:$PATH" >>~/.zshrc
 phpcs --config-set installed_paths ~/wpcs
 
 ## Import base `ruleset.xml` for PHPCS
