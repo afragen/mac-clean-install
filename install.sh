@@ -14,6 +14,9 @@ chsh -s $(which zsh)
 # Install Node Version Manager (nvm)
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
 
+# Install zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
+
 # Install my modified robbyrussell.zsh-theme.
 curl -o ~/.oh-my-zsh/themes/afragen.zsh-theme https://gist.githubusercontent.com/afragen/b5c7360618558ed305fef00b01db9116/raw/afragen.zsh-theme
 
@@ -23,7 +26,7 @@ curl -o ~/.oh-my-zsh/custom/aliases.zsh https://gist.githubusercontent.com/afrag
 # Finish setting up oh-my-zsh!
 sed -i '.bak' 's/^ZSH_THEME=.*$/ZSH_THEME="afragen"/' ~/.zshrc
 sed -i '.bak' '/^source/ i\
-plugins\+=\(zsh-nvm\)
+plugins\+=\(git zsh-nvm zsh-autosuggestions\)
 ' ~/.zshrc
 omz update
 
