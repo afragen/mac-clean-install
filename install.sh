@@ -49,6 +49,7 @@ code --install-extension Shan.code-settings-sync
 
 # Install WordPress Coding Standards.
 composer global require friendsofphp/php-cs-fixer
+composer global require yoast/phpunit-polyfills
 composer create-project wp-coding-standards/wpcs --no-dev
 composer require --dev --working-dir=/Users/afragen/wpcs phpcompatibility/phpcompatibility-wp:"*"
 echo "export PATH=/Users/afragen/wpcs/vendor/bin:$PATH" >>~/.zshrc
