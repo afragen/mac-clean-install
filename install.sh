@@ -58,10 +58,6 @@ composer require --dev --working-dir=/Users/afragen/wpcs phpcompatibility/phpcom
 echo "export PATH=/Users/afragen/wpcs/vendor/bin:$PATH" >>~/.zshrc
 phpcs --config-set installed_paths ~/wpcs
 
-# Set up for M1 Mac in Docker wp-env to use Chromium
-echo "export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true" >>~/.zshrc
-echo "export PUPPETEER_EXECUTABLE_PATH=\`which chromium\`" >>~/.zshrc
-
 ## Import base `ruleset.xml` for PHPCS
 curl --create-dirs -o ~/code-standards/ruleset.xml https://gist.githubusercontent.com/afragen/341bc1c7f7438cf963d4f6e08f403f40/raw/ruleset.xml
 
