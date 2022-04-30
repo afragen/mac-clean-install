@@ -26,7 +26,7 @@ curl -o ~/.oh-my-zsh/custom/aliases.zsh https://gist.githubusercontent.com/afrag
 # Finish setting up oh-my-zsh!
 sed -i '.bak' 's/^ZSH_THEME=.*$/ZSH_THEME="afragen"/' ~/.zshrc
 sed -i '.bak' '/^source/ i\
-plugins\+=\(git zsh-nvm zsh-autosuggestions\)
+plugins\+=\(git zsh-nvm\)
 ' ~/.zshrc
 omz update
 
