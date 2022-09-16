@@ -45,7 +45,7 @@ awk '!seen[$0]++' /etc/paths
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install-brew.sh)"
 
 # Install VSCode Settings Sync extension
-code --install-extension Shan.code-settings-sync
+# code --install-extension Shan.code-settings-sync
 
 # Add xDebug idekey for VSCode to shell.
 # echo "export XDEBUG_CONFIG=\"idekey=VSCODE\"" >>~/.zshrc
