@@ -48,7 +48,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/
 # code --install-extension Shan.code-settings-sync
 
 # Add xDebug idekey for VSCode to shell.
-# echo "export XDEBUG_CONFIG=\"idekey=VSCODE\"" >>~/.zshrc
+echo "export XDEBUG_CONFIG=\"idekey=VSCODE\"" >>~/.zshrc
 
 # Install WordPress Coding Standards.
 composer global require friendsofphp/php-cs-fixer
