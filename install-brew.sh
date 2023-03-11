@@ -8,5 +8,3 @@ brew update && brew upgrade && brew cleanup && brew doctor
 curl -o ~/Brewfile https://raw.githubusercontent.com/afragen/mac-clean-install/master/Brewfile
 
 brew bundle install --file=~/Brewfile
-
-#cask "https://www.corecode.io/macupdater/casks/citrix-workspace.rb"

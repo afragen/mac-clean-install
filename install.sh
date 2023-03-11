@@ -26,7 +26,7 @@ curl -o ~/.oh-my-zsh/custom/aliases.zsh https://gist.githubusercontent.com/afrag
 # Finish setting up oh-my-zsh!
 sed -i '.bak' 's/^ZSH_THEME=.*$/ZSH_THEME="afragen"/' ~/.zshrc
 sed -i '.bak' '/^source/ i\
-plugins\+=\(git zsh-nvm\)
+plugins\+=\(git\)
 ' ~/.zshrc
 omz update
 
@@ -50,16 +50,17 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/
 # Add xDebug idekey for VSCode to shell.
 echo "export XDEBUG_CONFIG=\"idekey=VSCODE\"" >>~/.zshrc
 
-# Install WordPress Coding Standards.
-composer global require friendsofphp/php-cs-fixer
-composer global require yoast/phpunit-polyfills
-composer create-project wp-coding-standards/wpcs --no-dev
-composer require --dev --working-dir=/Users/afragen/wpcs phpcompatibility/phpcompatibility-wp:"*"
-echo "export PATH=/Users/afragen/wpcs/vendor/bin:$PATH" >>~/.zshrc
-phpcs --config-set installed_paths ~/wpcs
+# Add NVM paths to shell.
+echo "export NVM_DIR=\"$HOME/.nvm\"
+  [ -s \"/opt/homebrew/opt/nvm/nvm.sh\" ] && \. \"/opt/homebrew/opt/nvm/nvm.sh\"  # This loads nvm
+  [ -s \"/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm\" ] && \. \"/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm\"  # This loads nvm bash_completion" >>~/.zshrc
 
 ## Import base `ruleset.xml` for PHPCS
 curl --create-dirs -o ~/code-standards/ruleset.xml https://gist.githubusercontent.com/afragen/341bc1c7f7438cf963d4f6e08f403f40/raw/ruleset.xml
+
+# Install WordPress Coding Standards.
+# Run install-wpcs.sh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install-wpcs.sh)"
 
 # Install/Update System Prefs
 # Run macos-prefs.sh
