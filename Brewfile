@@ -17,7 +17,7 @@ brew "libxml2"
 brew "mas"
 brew "node"
 brew "nvm"
-brew "npm@6"
+#brew "npm@6"
 brew "php@8.0", restart_service: true
 brew "php-code-sniffer", link: false
 brew "php-cs-fixer"
@@ -62,20 +62,21 @@ cask "suspicious-package"
 cask "tableplus"
 cask "transmit"
 cask "visual-studio-code"
-cask "visual-studio-code-insiders"
+#cask "visual-studio-code-insiders"
 cask "vlc"
-cask "wordpresscom"
+#cask "wordpresscom"
 cask "zoom"
 #cask "https://www.corecode.io/macupdater/casks/citrix-workspace.rb"
 
 mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
-mas "Apple Configurator 2", id: 1037126344
+mas "Apple Configurator", id: 1037126344
+mas "Darkroom", id: 953286746
 mas "GarageBand", id: 682658836
 mas "iA Writer", id: 775737590
 mas "iMovie", id: 408981434
 mas "iPreview", id: 1519213509
-#mas "Ivory", id: xxxx
+mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
 mas "MsgFiler", id: 418778021
 mas "NeoOffice", id: 639210716
@@ -84,9 +85,11 @@ mas "Pages", id: 409201541
 mas "Patterns", id: 429449079
 mas "PDFOptim", id: 621276561
 mas "Pixelmator Pro", id: 1289583905
+mas "Photomator", id: 1444636541
 mas "PreviewMarkdown", id: 1492280469
 mas "RAW Power", id: 1157116444
 mas "SnapNDrag Pro", id: 430397512
+mas "TestFlight", id: 899247664
 mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
 mas "XDebugToggle", id: 1437227804
