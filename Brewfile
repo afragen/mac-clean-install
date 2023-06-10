@@ -72,9 +72,9 @@ mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
 mas "Apple Configurator", id: 1037126344
 mas "Darkroom", id: 953286746
-mas "GarageBand", id: 682658836
+#mas "GarageBand", id: 682658836
 mas "iA Writer", id: 775737590
-mas "iMovie", id: 408981434
+#mas "iMovie", id: 408981434
 mas "iPreview", id: 1519213509
 mas "Ivory", id: 6444602274
 mas "Keynote", id: 409183694
