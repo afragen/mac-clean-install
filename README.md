@@ -19,11 +19,9 @@ I'm hoping to make my setup of a clean MacBook as simple as possible. Must resta
 
 ## Setup WordPress Coding Standards set in `install.sh`
 ```
-composer global require friendsofphp/php-cs-fixer
-composer create-project wp-coding-standards/wpcs --no-dev
-composer require --dev --working-dir=/Users/afragen/wpcs phpcompatibility/phpcompatibility-wp:"*"
-echo "export PATH=/Users/afragen/wpcs/vendor/bin:$PATH" >>~/.zshrc
-phpcs --config-set installed_paths ~/wpcs
+composer global remove --dev dealerdirect/phpcodesniffer-composer-installer higidi/composer-phpcodesniffer-standards-plugin squizlabs/PHP_codesniffer
+composer global config allow-plugins.dealerdirect/phpcodesniffer-composer-installer true
+composer global require --dev wp-coding-standards/wpcs:"^3.0.0" --update-with-dependencies
 ```
 
 

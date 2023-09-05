@@ -56,7 +56,7 @@ echo "export NVM_DIR=\"$HOME/.nvm\"
   [ -s \"/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm\" ] && \. \"/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm\"  # This loads nvm bash_completion" >>~/.zshrc
 
 ## Import base `ruleset.xml` for PHPCS
-curl --create-dirs -o ~/code-standards/ruleset.xml https://gist.githubusercontent.com/afragen/341bc1c7f7438cf963d4f6e08f403f40/raw/ruleset.xml
+#curl --create-dirs -o ~/code-standards/ruleset.xml https://gist.githubusercontent.com/afragen/341bc1c7f7438cf963d4f6e08f403f40/raw/ruleset.xml
 
 # Install WordPress Coding Standards.
 # Run install-wpcs.sh
