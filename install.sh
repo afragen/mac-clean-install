@@ -3,6 +3,8 @@
 # Let's get started.
 cd ~
 xcode-select --install
+/usr/sbin/softwareupdate --install-rosetta --agree-to-license
+
 git config --global credential.helper osxkeychain
 git config --global user.email "andy@thefragens.com"
 git config --global user.name "Andy Fragen"
@@ -13,9 +15,6 @@ chsh -s $(which zsh)
 
 # Install Node Version Manager (nvm)
 git clone https://github.com/lukechilds/zsh-nvm ~/.oh-my-zsh/custom/plugins/zsh-nvm
-
-# Install zsh-autosuggestions
-git clone https://github.com/zsh-users/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 
 # Install my modified robbyrussell.zsh-theme.
 curl -o ~/.oh-my-zsh/themes/afragen.zsh-theme https://gist.githubusercontent.com/afragen/b5c7360618558ed305fef00b01db9116/raw/afragen.zsh-theme
