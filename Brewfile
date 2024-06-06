@@ -83,6 +83,7 @@ mas "MsgFiler", id: 418778021
 mas "NeoOffice", id: 639210716
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
+mas "Pastebot", id: 1179623856
 mas "Patterns", id: 429449079
 mas "PDFOptim", id: 621276561
 mas "Pixelmator Pro", id: 1289583905
