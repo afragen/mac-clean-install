@@ -59,7 +59,7 @@ echo "export NVM_DIR=\"$HOME/.nvm\"
 
 # Install WordPress Coding Standards.
 # Run install-wpcs.sh
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install-wpcs.sh)"
+#sh -c "$(curl -fsSL https://raw.githubusercontent.com/afragen/mac-clean-install/master/install-wpcs.sh)"
 
 # Install/Update System Prefs
 # Run macos-prefs.sh

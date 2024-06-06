@@ -18,7 +18,7 @@ brew "mas"
 brew "node"
 brew "nvm"
 #brew "npm@6"
-brew "php@8.0", restart_service: true
+brew "php", restart_service: true
 brew "php-code-sniffer", link: false
 brew "php-cs-fixer"
 brew "phpunit", link: false
@@ -32,7 +32,7 @@ brew "zlib"
 cask "1password"
 cask "aerial"
 cask "appcleaner"
-cask "bartender"
+# cask "bartender"
 cask "bbedit"
 cask "carbon-copy-cloner"
 cask "citrix-workspace"
@@ -46,9 +46,10 @@ cask "handbrake"
 cask "horos"
 cask "imageoptim"
 cask "imazing"
+cask "jordanbaird-ice"
 cask "keybase"
 cask "local"
-cask "local-beta"
+cask "local@beta"
 cask "maccy"
 cask "netnewswire"
 cask "openinterminal"
@@ -67,7 +68,6 @@ cask "visual-studio-code"
 cask "vlc"
 #cask "wordpresscom"
 cask "zoom"
-#cask "https://www.corecode.io/macupdater/casks/citrix-workspace.rb"
 
 mas "1Password for Safari", id: 1569813296
 mas "Amphetamine", id: 937984704
@@ -91,6 +91,6 @@ mas "PreviewMarkdown", id: 1492280469
 mas "RAW Power", id: 1157116444
 mas "SnapNDrag Pro", id: 430397512
 mas "TestFlight", id: 899247664
-mas "Trello", id: 1278508951
+# mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
 mas "XDebugToggle", id: 1437227804
