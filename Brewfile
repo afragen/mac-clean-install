@@ -32,7 +32,7 @@ brew "zlib"
 cask "1password"
 cask "aerial"
 cask "appcleaner"
-# cask "bartender"
+#cask "bartender"
 cask "bbedit"
 cask "carbon-copy-cloner"
 cask "citrix-workspace"
@@ -50,7 +50,7 @@ cask "jordanbaird-ice"
 cask "keybase"
 cask "local"
 cask "local@beta"
-cask "maccy"
+#cask "maccy"
 cask "netnewswire"
 cask "openinterminal"
 cask "openinterminal-lite"
@@ -92,6 +92,6 @@ mas "PreviewMarkdown", id: 1492280469
 mas "RAW Power", id: 1157116444
 mas "SnapNDrag Pro", id: 430397512
 mas "TestFlight", id: 899247664
-# mas "Trello", id: 1278508951
+#mas "Trello", id: 1278508951
 mas "Xcode", id: 497799835
 mas "XDebugToggle", id: 1437227804
