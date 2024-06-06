@@ -26,7 +26,6 @@ brew "subversion"
 brew "tree"
 brew "wget"
 brew "wp-cli"
-brew "youtube-dl"
 brew "zlib"
 
 cask "1password"
