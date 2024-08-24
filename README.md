@@ -48,7 +48,7 @@ https://sixcolors.com/post/2020/11/quick-tip-enable-touch-id-for-sudo/
 
 ## Setup node for arm64 (Apple Silicon)
 * open terminal session, oh-my-zsh should automatically install nvm
-* `nvm install 16` as of node v16.0 compiled for Apple Silicon.
-* allow time for node 16.x to build/compile
-* `nvm use 16` to set node for current session
-* `nvm alias default 16` to set default shell session version of node
+* `nvm install 20` as of node v20.x compiled for Apple Silicon.
+* allow time for node 20.x to build/compile
+* `nvm use 20` to set node for current session
+* `nvm alias default 20` to set default shell session version of node
