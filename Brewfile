@@ -38,11 +38,12 @@ cask "citrix-workspace"
 cask "docker"
 cask "encryptme"
 cask "element"
-cask "firefox"
+#cask "firefox"
 cask "gitkraken"
 cask "google-chrome"
 cask "handbrake"
 cask "horos"
+cask "ice"
 cask "imageoptim"
 cask "imazing"
 cask "jordanbaird-ice"
@@ -55,12 +56,11 @@ cask "openinterminal"
 cask "openinterminal-lite"
 cask "openineditor-lite"
 cask "plex-media-server"
-cask "screens"
-cask "sequel-pro-nightly"
+#cask "screens"
 cask "slack"
 #cask "spamsieve"
 cask "suspicious-package"
-cask "tableplus"
+#cask "tableplus"
 cask "transmit"
 cask "visual-studio-code"
 #cask "visual-studio-code-insiders"
@@ -73,12 +73,14 @@ mas "Amphetamine", id: 937984704
 mas "Apple Configurator", id: 1037126344
 mas "Darkroom", id: 953286746
 #mas "GarageBand", id: 682658836
+mas "Hyperspace", id: 6739505345
 mas "iA Writer", id: 775737590
 #mas "iMovie", id: 408981434
 mas "iPreview", id: 1519213509
 mas "Ivory", id: 6444602274
+mas "JSONPeep", id: 1458969831
 mas "Keynote", id: 409183694
-mas "MsgFiler", id: 418778021
+mas "MsgFiler 4", id: 6478043112
 mas "NeoOffice", id: 639210716
 mas "Numbers", id: 409203825
 mas "Pages", id: 409201541
@@ -92,5 +94,6 @@ mas "RAW Power", id: 1157116444
 mas "SnapNDrag Pro", id: 430397512
 mas "TestFlight", id: 899247664
 #mas "Trello", id: 1278508951
+mas "Wipr", id: 1662217862
 mas "Xcode", id: 497799835
 mas "XDebugToggle", id: 1437227804
