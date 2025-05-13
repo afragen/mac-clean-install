@@ -5,6 +5,9 @@ cd ~
 xcode-select --install
 /usr/sbin/softwareupdate --install-rosetta --agree-to-license
 
+# Will need to accept xcode license
+sudo xcodebuild -license accept
+
 git config --global credential.helper osxkeychain
 git config --global user.email "andy@thefragens.com"
 git config --global user.name "Andy Fragen"
